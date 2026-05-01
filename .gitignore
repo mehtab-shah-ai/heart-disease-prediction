@@ -1,0 +1,14 @@
+# Cache
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+myenv/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
