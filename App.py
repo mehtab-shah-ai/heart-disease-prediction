@@ -29,13 +29,13 @@ with col1:
     resting_bp     = st.number_input("Resting Blood Pressure (mm Hg)", 80, 200, 120)
     cholesterol    = st.number_input("Cholesterol (mg/dL)", 100, 600, 200)
     fasting_bs     = st.selectbox("Fasting Blood Sugar > 120 mg/dL", [0, 1],
-                        format_func=lambda x: "Yes" if x == 1 else "No")  # ✅ 0,1 ki jagah Yes/No
+                        format_func=lambda x: "Yes" if x == 1 else "No")  # ✅ 0,1 replace with Yes/No
 
 with col2:
     resting_ecg    = st.selectbox("Resting ECG", ["Normal", "ST", "LVH"])
     max_hr         = st.slider("Max Heart Rate", 60, 220, 150)
     exercise_angina= st.selectbox("Exercise-Induced Angina", ["Y", "N"],
-                        format_func=lambda x: "Yes" if x == "Y" else "No")  # ✅ Y/N ki jagah Yes/No
+                        format_func=lambda x: "Yes" if x == "Y" else "No")  # ✅ Y/N replace with Yes/No
     oldpeak        = st.slider("Oldpeak (ST Depression)", 0.0, 6.0, 1.0)
     st_slope       = st.selectbox("ST Slope", ["Up", "Flat", "Down"])
 
